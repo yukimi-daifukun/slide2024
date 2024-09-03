@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex" />
+
+    <title>HTML例文集</title>
+    <meta name="author" content="谷川 靖郎">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- FontAwesomeを使う -->
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" id="highlight-theme">
+
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>タイトル</h1>
+          <hr />
+          <ul style="list-style:none">
+            <li>氏名：河童さん</li>
+            <li>所属：小樽運河</li>
+            <li>学籍番号：0000000</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>見出しと本文の書き方</h2>
+          </section>
+
+          <section>
+            <h3>見出しには h1～h6 のタグ</h3>
+            <hr />
+            <p>文章は p のタグで段落を作ります</p>
+            <p>標準では中央揃えになります</p>
+            <p>こんな風に</p>
+          </section>
+
+          <section style="text-align: left">
+            <h3>左寄せのページ</h3>
+            <hr />
+            <p>文章は p のタグで段落を作ります</p>
+            <p>sectionタグの書き方により，左寄せにできます</p>
+            <p>こんな風に</p>
+          </section>
+
+          <section style="text-align: right">
+            <h3>右寄せのページ</h3>
+            <hr />
+            <p>文章は p のタグで段落を作ります</p>
+            <p>sectionタグの書き方により，右寄せにできます</p>
+            <p>こんな風に</p>
+          </section>
+
+          <section>
+            <h3>本文だけ左寄せのページ</h3>
+            <hr />
+            <div style="text-align: left">
+              <p>文章は p のタグで段落を作ります</p>
+              <p>divタグの書き方により，左寄せにできます</p>
+              <p>こんな風に</p>
+            </div>
+          </section>
+
+          <section>
+            <h3>本文だけ右寄せのページ</h3>
+            <hr />
+            <div  style="text-align: right">
+              <p>文章は p のタグで段落を作ります</p>
+              <p>divタグの書き方により，右寄せにできます</p>
+              <p>こんな風に</p>
+            </div>
+          </section>
+
+          <section>
+            <h3>要するに，いろいろできます</h3>
+            <hr />
+            <div style="text-align: left">
+              <p>部分的に左寄せにできます</p>
+              <p>ここは左寄せの部分</p>
+            </div>
+            <div  style="text-align: right">
+              <p>部分的に右寄せにできます</p>
+              <p>ここは右寄せの部分</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>箇条書きの書き方</h2>
+          </section>
+
+          <section>
+            <h3>普通の箇条書き</h3>
+            <hr />
+            <ul>
+              <li>一番目の項目</li>
+              <li>二番目の項目</li>
+              <li>三番目の項目</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>番号付き箇条書き</h3>
+            <hr />
+            <ol>
+              <li>一番目の項目</li>
+              <li>二番目の項目</li>
+              <li>三番目の項目</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>順番に現れる箇条書き</h3>
+            <hr />
+            <ul>
+              <li class="fragment">順番に</li>
+              <li class="fragment">現れる</li>
+              <li class="fragment">Reval.jsに特有の仕掛け</li>
+            </ul>
+            <p class="fragment">➡ こんな感じです</p>
+            <p class="fragment">※スライドらしい表現になります</p>
+          </section>
+
+          <section>
+            <h3>順番に現れる箇条書き（順序指定）</h3>
+            <hr />
+            <ul>
+              <li class="fragment" data-fragment-index="2">順番に</li>
+              <li class="fragment" data-fragment-index="3">現れる</li>
+              <li class="fragment" data-fragment-index="1">Reval.jsに特有の仕掛け</li>
+            </ul>
+            <p class="fragment">➡ こんな感じです</p>
+            <p class="fragment">※スライドらしい表現になります</p>
+          </section>
+
+          <section>
+            <h3>順番に現れる箇条書き（別の書き方）</h3>
+            <hr />
+            <ul>
+              <li><span class="fragment">順番に</span></li>
+              <li><span class="fragment">現れる</span></li>
+              <li><span class="fragment">Reval.jsに特有の仕掛け</span></li>
+            </ul>
+            <p class="fragment">➡ こんな感じです</p>
+            <p class="fragment">※スライドらしい表現になります</p>
+          </section>
+          <section>
+            <h3>参考</h3>
+            <hr />
+            <ul>
+              <li><a href="https://saruwakakun.com/html-css/basic/ul-ol-li#section3" target="_blanc">【HTMLで箇条書き】ul・ol・liタグの使い方まとめ</a></li>
+              <li><a href="https://saruwakakun.com/html-css/reference/ul-ol-li-design" target="_blanc">コピペで使えるリストデザイン34選：CSSで箇条書きをおしゃれに</a></li>
+              <li><a href="https://www.yuu-diaryblog.com/2017/03/14/list-design/" target="_blanc">CSSで作るリストデザイン38選！オシャレな箇条書きを実現</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>順番に出る<span class="fragment">仕掛け</span>について</h2>
+              <hr />
+              <p class="fragment">段落ごと現れるようにできます</p>
+              <p><span class="fragment">細切れに</span><span class="fragment">現れるようにも</span><span class="fragment">できます</span></p>
+              <span class="fragment"><img src="https://3.bp.blogspot.com/-rvJeRsecCXg/WUdZMxvbzZI/AAAAAAABFDs/ehK3rojOMZklPUMh6OA4b-H9ZXX60AvMwCLcBGAs/s800/pop_gazouha_image_desu.png" width="40%" /><br />画像もね</span>
+          </section>
+
+          <section>
+            <h2>変化する仕掛け</h2>
+            <p>demo.htmlより</p>
+            <hr />
+            <p class="fragment grow">大きくなる</p>
+            <p class="fragment shrink">小さくなる</p>
+            <p class="fragment fade-out">消える</p>
+            <p>
+              <span style="display: inline-block;" class="fragment fade-right">左から，</span>
+              <span style="display: inline-block;" class="fragment fade-up">下から，</span>
+              <span style="display: inline-block;" class="fragment fade-down">上から，</span>
+              <span style="display: inline-block;" class="fragment fade-left">右から入る</span>
+            </p>
+            <p class="fragment fade-in-then-out">現れて消える</p>
+            <p class="fragment fade-in-then-semi-out">現れて消え…ない</p>
+            <p><span class="fragment highlight-red">赤で，</span><span class="fragment highlight-blue">青で，</span><span class="fragment highlight-green">緑で</span>強調</p>
+        </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>表の書き方，色の付け方</h2>
+          </section>
+
+          <section>
+            <h3>表の書き方</h3>
+            <hr />
+            <div font-size="xx-small">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="left">ヤマガラ</td>
+                    <td class="left">チチツー，チチツー，チチ</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="left">シジュウカラ</td>
+                    <td class="left">チチチュチチチュチチチュ</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="left">カワラヒワ</td>
+                    <td class="left">ピピピピピ，ジュイーン</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="left">ヒヨドリ</td>
+                    <td class="left">ヒーヨ，ヒーヨ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h3>色の付け方</h3>
+            <hr />
+            <p><span style="color:#663333">色</span>の色々な付け方</p>
+            <p><span style="color:#6666ff">色々</span>な色の付け方</p>
+            <p><span style="color:#339933">色々色</span>のの付け方</p>
+            <p><span style="color:#9933ff">色々色々</span>の…</p>
+          </section>
+        </section>
+
+        <section>
+          <h3>リンクの張り方</h3>
+          <hr />
+          <ul>
+            <li><a href="https://www.google.com/" target="_blanc">Google検索</a>へのリンク</li>
+            <li>マーティン・リース編／佐藤勝彦監修『<a href="https://www.amazon.co.jp/%E5%AE%87%E5%AE%99%E5%A4%A7%E5%9B%B3%E9%91%91-%E3%83%8D%E3%82%B3%E3%83%BB%E3%83%91%E3%83%96%E3%83%AA%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0DK%E3%83%96%E3%83%83%E3%82%AF%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E4%BD%90%E8%97%A4%E5%8B%9D%E5%BD%A6/dp/4777053687/ref=sr_1_1/356-7305128-0177045?ie=UTF8&qid=1505480587&sr=8-1&keywords=%E5%AE%87%E5%AE%99%E5%A4%A7%E5%9B%B3%E9%91%91" target="_blanc">宇宙大図鑑</a>』ネコ・パブリッシングDKブックシリーズ, 2014.9</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>色々貼ってみる</h2>
+          </section>
+
+          <section>
+            <h3>画像<span style="color:red">の</span>貼り方</h3>
+            <img src="https://1.bp.blogspot.com/-s8pah3jJHSg/VycdmHiC2NI/AAAAAAAA6SY/HXbLU07CJCQ0565IiqtKGasFv008jCKgQCLcB/s800/cat_sakura_cut_male.png" width="30%" />
+          </section>
+
+          <section>
+            <img src="https://1.bp.blogspot.com/-s8pah3jJHSg/VycdmHiC2NI/AAAAAAAA6SY/HXbLU07CJCQ0565IiqtKGasFv008jCKgQCLcB/s800/cat_sakura_cut_male.png" width="30%" style="float:left" />
+            <p>文章に画像を入れる場合</p>
+            <p>文章に画像を入れる場合</p>
+            <p>文章に画像を入れる場合</p>
+            <p>やり方は何通りかあります</p>
+          </section>
+
+          <section>
+            <h3>YouTube動画の埋め込み</h3>
+            <hr />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XMolEvB5EqA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </section>
+
+          <section>
+            <h3>Google Mapの埋め込み</h3>
+            <hr />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047271.6167475223!2d78.45557251641418!3d7.8516989948106595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2z44K544Oq44Op44Oz44Kr!5e0!3m2!1sja!2sjp!4v1661347672408!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+
+          <section>
+            <h3>googleスプレッドシートのグラフの埋め込み</h3>
+            <p>データは<a href="https://www.city.sapporo.jp/toukei/jinko/juuki/juuki.html">こちら</a>より</p>
+            <hr />
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRxcuvkt9J6xiQlKzaXiROsvleIp44zaf8k736sI11jUG7g1j2Yicy1DprJHXlPNb5Rzl_eH0V_m2t/pubchart?oid=1361624993&amp;format=interactive"></iframe>
+          </section>
+
+          <section>
+            <h3>オーディオファイルの貼り方</h3>
+            <hr />
+            <p>
+              <audio controls>
+                <source src="../audio/1216_132711.WAV" />ここは何も書かないで良い。
+              </audio>
+            </p>
+          </section>
+
+          <section>
+            <h3>アイコンフォントの貼り方</h3>
+            <hr />
+            <p>
+              <i class="fas fa-pencil-alt" style="color:#000066"></i>
+              <i class="fas fa-folder-open" style="color:#006600"></i>
+              <i class="fas fa-book" style="color:#660000"></i>
+              <i class="fas fa-university" style="color:#666600"></i>
+              <i class="fas fa-heart faa-pulse animated" style="color:#ff0000"></i>
+              <i class="fas fa-file-alt" style="color:#999933"></i>
+              <i class="fas fa-arrow-down animated" style="color:#990000"></i>
+            </p>
+            <p>ネットにつながっていないと表示されません</p>
+            <p><a href="https://fontawesome.com/versions" target="_blanc">Font Awesome 5を使用</a></p>
+          </section>
+
+          <section>
+            <h3>Unicode絵文字</h3>
+            <hr />
+            <p>😀😺👫🐈🐕</p>
+            <p>環境によって見え方が違います</p>
+          </section>
+        </section>
+
+        <section>
+          <h3>ご清聴ありがとうございました</h3>
+        </section>
+
+        <section>
+          <h3><i class="fas fa-book" style="color:#990000"></i> 参考文献，参考サイト</h3>
+          <hr />
+          <ul>
+            <li><a href="https://github.com/hakimel/reveal.js/" target="_blanc">Reveal.js</a></li>
+            <li><a href="https://github.com/rajgoel/reveal.js-plugins" target="_blanc">rajgoel / reveal.js-plugins</a></li>
+            <li><a href="https://saruwakakun.com/html-css/basic" target="_blanc">サルワカ：HTML&CSS入門 Webデザインをイチから学ぼう</a></li>
+            <li><a href="http://www.tohoho-web.com/www.htm" target="_blanc">とほほのHTML入門</a></li>
+            <li><a href="https://saruwakakun.com/html-css/basic/font-awesome" target="_blanc">【保存版】Font Awesomeの使い方：Webアイコンフォントを使おう</a></li>
+            <li><a href="https://fontawesome.com/versions" target="_blanc">Versions of Font Awesome</a></li>
+            <li><a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blanc">Unicode絵文字</a> </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+
+     // Also available as an ES module, see:
+     // https://revealjs.com/initialization/
+     Reveal.initialize({
+       controls: true,
+       progress: true,
+       center: true,
+       hash: true,
+       transition: 'convex',
+       // Learn about plugins: https://revealjs.com/plugins/
+       plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+     });
+    </script>
+  </body>
+</html>
