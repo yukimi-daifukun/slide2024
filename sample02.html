@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex" />
+
+    <title>HTML例文集</title>
+    <meta name="author" content="谷川 靖郎">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- FontAwesomeを使う -->
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" id="highlight-theme">
+
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>背景デザイン<span style="color:#ff66ff">で</span>遊ぶ</h1>
+            <hr />
+            <ul style="list-style:none">
+              <li>情報機器の操作</li>
+              <li>河童さん</li>
+            </ul>
+        </section>
+
+        <section>
+          <section>
+            <br /><br />
+            <h2>テーマの自作</h2>
+            <hr />
+            <h2><i class="fas fa-flip-vertical" style="color:#554433">テーマの自作</i></h2>
+          </section>
+
+          <section>
+            <h3>CSSファイルを変更する</h3>
+            <hr />
+            <p>dist/theme/hoge.css</p>
+            <p>↓</p>
+            <p>色の設定などをいじる</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <br /><br />
+            <h2>背景色で遊ぶ</h2>
+            <hr />
+            <h2><i class="fas fa-flip-vertical" style="color:#554433">背景色で遊ぶ</i></h2>
+          </section>
+
+          <section data-background="#993333">
+            <h3>背景色の変更</h3>
+            <hr />
+            <ul>
+              <li>sectionタグに細工する：<code>&lt;section data-background="#993333"&gt;</code></li>
+              <li>属性で色を指定している</li>
+            </ul>
+          </section>
+
+          <section data-background="#333399" data-background-transition="zoom">
+            <h3>背景色の変更 + 動き</h3>
+            <hr />
+            <ul>
+              <li>さらに細工を加える：<code>&lt;section data-background="#993333" data-background-transition="zoom"&gt;</code></li>
+              <li>属性で色と動きを指定している</li>
+            </ul>
+          </section>
+
+          <section data-background="linear-gradient(#009999, #000033)">
+            <h3>グラデーション背景</h3>
+            <hr />
+            <ul>
+              <li>CSSの場合：<code>background: linear-gradient(#009999, #000033)</code></li>
+              <li>sectionタグの場合：<code>&lt;section data-background="linear-gradient(#009999, #000033)"&gt;</code></li>
+            </ul>
+          </section>
+
+          <section data-background="radial-gradient(#999900, #003300)">
+            <h3>円形グラデーション</h3>
+            <hr />
+            <ul>
+              <li>CSSの場合：<code>background: radial-gradient(#999900, #003300)</code></li>
+              <li>sectionタグの場合：<code>&lt;section data-background="radial-gradient(#999900, #003300)"&gt;</code></li>
+            </ul>
+          </section>
+
+          <section>
+            <i class="fas fa-pencil-alt" style="color:#999900"></i> 参考：<a href="https://www.webcreatorbox.com/tech/css-gradient">webクリエイターボックス</a>
+          </section>
+
+        </section>
+
+        <section>
+          <section>
+            <br /><br />
+            <h2>背景画像で遊ぶ</h2>
+            <hr />
+            <h2><i class="fas fa-flip-vertical" style="color:#554433">背景画像で遊ぶ</i></h2>
+          </section>
+          <section data-background="https://upload.wikimedia.org/wikipedia/commons/a/ae/AfricanWildCat.jpg">
+            <h3>背景画像の設定</h3>
+            <hr />
+            <ul>
+              <li>sectionタグに細工する：<br /><code>&lt;section data-background="画像のパス・URL"&gt;</code></li>
+              <li>属性で画像ファイルを指定している</li>
+            </ul>
+          </section>
+
+          <section data-background="https://upload.wikimedia.org/wikipedia/commons/a/ae/AfricanWildCat.jpg" data-background-size="contain">
+            <h2>背景画像の調整</h2>
+            <hr />
+            <ul>
+              <li>sectionタグに細工する：<br /><code>&lt;section data-background="画像のパス・URL" data-background-size="contain"&gt;</code></li>
+              <li>大きさの調整を加えている</li>
+            </ul>
+          </section>
+
+          <section data-background="https://upload.wikimedia.org/wikipedia/commons/a/ae/AfricanWildCat.jpg" data-background-opacity="0.5">
+            <h2>背景画像に透明度を設定</h2>
+            <hr />
+            <ul>
+              <li>さらに属性を追加：<br /><code>&lt;section data-background="画像のパス・URL" data-background-opacity="0.5"&gt;</code></li>
+              <li>属性で透明度の指定を加えている</li>
+            </p>
+          </section>
+        </section>
+
+        <section data-background-iframe="https://www.city.sapporo.jp/" data-background-interactive data-background-opacity="0.5">
+          <h2>背景webページ</h2>
+          <hr />
+          <ul>
+            <li>sectionタグに細工する：<br /><code>&lt;section data-background-iframe="webサイトのURL" data-background-interactive&gt;</code></li>
+            <li>うまく映らないページもあるので注意</li>
+          </ul>
+        </section>
+
+        <section data-background="./images/cat.gif">
+          <h3>ご清聴ありがとうございました</h3>
+        </section>
+
+        <section>
+          <h3><i class="fas fa-book" style="color:#990000"></i> 参考文献，参考サイト</h3>
+          <hr />
+          <ul>
+            <li><a href="https://revealjs.com/backgrounds/" target="_blanc">Reveal.js: Slide Backgrounds</a></li>
+            <li><a href="http://www.tohoho-web.com/www.htm" target="_blanc">とほほのHTML入門</a></li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+
+     // Also available as an ES module, see:
+     // https://revealjs.com/initialization/
+     Reveal.initialize({
+       controls: true,
+       progress: true,
+       center: true,
+       hash: true,
+
+       // Learn about plugins: https://revealjs.com/plugins/
+       plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+     });
+    </script>
+    </body>
+</html>
